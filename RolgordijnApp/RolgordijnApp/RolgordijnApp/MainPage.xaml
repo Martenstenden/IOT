@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="RolgordijnApp.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BackgroundColor="#14213D"
+            SelectedTabColor="#FCA311">
+
+    <ContentPage Icon="baseline_home_white_48dp.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            
+            <ImageButton Grid.Row="1" x:Name="UpBtn" Source="arrowIconUp" BackgroundColor="Transparent" Clicked="UpBtnClicked" Scale="1"/>
+            <ImageButton Grid.Row="3" x:Name="DownBtn" Source="arrowIconDown" BackgroundColor="Transparent" Clicked="DownBtnClicked" Scale="1"/>
+
+            <Button Grid.Row="5" x:Name="OpenBtn" Text="Open connection" FontFamily="Patrick" TextColor="#E5E5E5" BackgroundColor="#FCA311" CornerRadius="15" Clicked="OpenBtnClicked" HorizontalOptions="Center"/>
+            <Button Grid.Row="6" x:Name="CloseBtn" Text="Close connection" FontFamily="Patrick" TextColor="#E5E5E5" BackgroundColor="#FCA311" CornerRadius="15" Clicked="CloseBtnClicked" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="7" Text="{Binding LdrStatusText}" TextColor="#E5E5E5"/>
+            <Label Grid.Row="7" Text="{Binding Gordijnstatus}" TextColor="#E5E5E5"/>
+ 
+        </Grid>
+    </ContentPage>
+
+    <ContentPage Icon="baseline_alarm_white_48dp.png">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TimePicker Grid.Row="2" Grid.Column="0" x:Name="datePicker" Format="t" VerticalOptions="Center" Margin="60,0,0,0" FontFamily="Patrick" TextColor="#E5E5E5"/>
+
+            <ImageButton Grid.Row="2" Grid.Column="1" Source="baseline_add_white_48dp" Clicked="SetBtnClicked" HeightRequest="35" BackgroundColor="#FCA311" CornerRadius="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="5" Grid.ColumnSpan="2" Text="{Binding NextAlarmText}" TextColor="#E5E5E5" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+
+            <Button Grid.Row="6" Grid.ColumnSpan="2" Text="Clear" Clicked="CancelBtnClicked" BackgroundColor="#FCA311" CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,50"/>
+
+        </Grid>
+    </ContentPage>
+
+    
+
+</TabbedPage>

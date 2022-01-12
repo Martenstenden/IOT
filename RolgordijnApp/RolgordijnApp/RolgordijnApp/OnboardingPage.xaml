@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="RolgordijnApp.OnboardingPage">
+
+    <ContentPage BackgroundColor="#14213D">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="10"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Text="Skip" HorizontalOptions="End" BackgroundColor="Transparent" Clicked="NextBtnClicked" Margin="0,0,10,0"/>
+
+            <Label Grid.Row="2" Text="Welkom" TextColor="#FCA311" FontFamily="Patrick" FontSize="80" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Rectangle Grid.Row="3" BackgroundColor="#E5E5E5" WidthRequest="300" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="4" Text="Deze app is onderdeel van het systeem 'Automatisch Rolgordijn'." FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300"/>
+            <ProgressBar Grid.Row="6" Progress="0.33" ScaleY="3" Margin="50,0,50,0"/>
+            
+            
+        </Grid>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="#14213D">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition />
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Text="Skip" HorizontalOptions="End" BackgroundColor="Transparent" Clicked="NextBtnClicked" Margin="0,0,10,0"/>
+            
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="275">
+                <Label Text="LET OP!" FontFamily="Patrick" FontSize="50" TextColor="#FCA311" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+
+                <Rectangle BackgroundColor="White" WidthRequest="275" Margin="0,0,0,20"/>
+
+                <Label Text="Deze app maakt gebruik van" FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center"/>
+                <Label Text="meldingen" FontFamily="Patrick" FontSize="25" TextColor="#FCA311" HorizontalTextAlignment="Center"/>
+                <Label Text="i.p.v. een Alarm" FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center" Margin="0,0,0,50"/>
+
+                <Rectangle BackgroundColor="White" WidthRequest="275" Margin="0,0,0,20"/>
+
+                <Label Text="Als je meldingsgeluiden uit staan zal de app je niet wakker maken" FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <ProgressBar Grid.Row="2" Progress="0.66" ScaleY="3" Margin="50,0,50,0"/>
+        </Grid>
+        
+    </ContentPage>
+
+
+    <ContentPage BackgroundColor="#14213D">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition />
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Text="Volgende" HorizontalOptions="End" BackgroundColor="Transparent" Clicked="NextBtnClicked" Margin="0,0,30,0"/>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="275">
+                <Label Text="Made By:" FontFamily="Patrick" FontSize="50" TextColor="#FCA311" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+
+                <Rectangle BackgroundColor="White" WidthRequest="275" Margin="0,0,0,10"/>
+
+                <Label Text="Marten de Jong" FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+
+                <Rectangle BackgroundColor="White" WidthRequest="275" Margin="0,0,0,20"/>
+
+                <Label Text="Mede mogelijk gemaakt door:" FontFamily="Patrick" FontSize="25" TextColor="#E5E5E5" HorizontalTextAlignment="Center"/>
+                <Label Text="Groep B07" FontFamily="Patrick" FontSize="25" TextColor="#FCA311" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <ProgressBar Grid.Row="2" Progress="1" ScaleY="3" Margin="50,0,50,0"/>
+            
+            
+        </Grid>
+
+    </ContentPage>
+
+
+</CarouselPage>

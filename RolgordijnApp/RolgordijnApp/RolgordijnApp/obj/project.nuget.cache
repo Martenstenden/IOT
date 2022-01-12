@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZJyT4AF4E7bPkGRWI1Pu8RsTlI7LFULWWA24VL3E/+xg/r6HFC032z3e4EAx0Q2Dnr2TSSFtb2js8dU++mcniw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marten\\Desktop\\ProjectFolder\\Code\\RolgordijnApp\\RolgordijnApp\\RolgordijnApp\\RolgordijnApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marten\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.11\\com.airbnb.xamarin.forms.lottie.4.0.11.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.ffimageloading.svg\\2.4.11.982\\xamarin.ffimageloading.svg.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.ffimageloading.svg.forms\\2.4.11.982\\xamarin.ffimageloading.svg.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.forms\\5.0.0.2291\\xamarin.forms.5.0.0.2291.nupkg.sha512",
+    "C:\\Users\\Marten\\.nuget\\packages\\xamarin.forms.debugrainbows\\1.1.4\\xamarin.forms.debugrainbows.1.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}
